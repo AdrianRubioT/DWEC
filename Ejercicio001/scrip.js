@@ -6,6 +6,9 @@ Al finalizar deberá decir cuál es el número más alto. */
 
 
 var elemento = prompt("introduzca el numero de elementos que desea introducir");
+
+
+
 var lista = new Array;
 
 var mayor = 0;
@@ -20,6 +23,12 @@ for (let i = elemento; i > 0; i--) {
 
 }
 
-document.write(elemento + "</br>");
+lista.forEach(element => {
+    document.write(element + ",");
+});
+
+
+
+
 document.write("El numero mas grande es:" + mayor);
 
