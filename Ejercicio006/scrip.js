@@ -13,27 +13,32 @@ Resultado: 31
 
 function obtenerDiasMes(mes, anio) {
 
-    var espar = mes % 2;
+    Date.setMonth(mes);
+    Date.setYear(anio);
 
 
-    switch (key) {
 
-        case 0:
-            /* caso par */
-            
-            if (mes == 2 ) {
-                
-                if (anio % 400 == 0 || anio % 4 == 0) {
-                    alert("28 dias");
-                } else {
-                    alert("29 dias");
-                }
-
-
-            }
-
+    switch (fecha.getMonth()) {
+        case 1:
 
             break;
+
+        case 1:
+
+            break;
+        case 1:
+
+            break;
+        case 1:
+
+            break;
+        case 1:
+
+            break;
+        case 1:
+
+            break;
+
 
         default:
             break;
