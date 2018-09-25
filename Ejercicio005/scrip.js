@@ -11,33 +11,12 @@ Resultado: 31
 
  */
 
+var mes = 2;
+var anio = 2100;
+
+alert(obtenerDiasMes(mes, anio));
+
 function obtenerDiasMes(mes, anio) {
-
-    var espar = mes % 2;
-
-
-    switch (key) {
-
-        case 0:
-            /* caso par */
-            
-            if (mes == 2 ) {
-                
-                if (anio % 400 == 0 || anio % 4 == 0) {
-                    alert("28 dias");
-                } else {
-                    alert("29 dias");
-                }
-
-
-            }
-
-
-            break;
-
-        default:
-            break;
-    }
-
+    return new Date(anio, mes, 0).getDate();
 }
 
