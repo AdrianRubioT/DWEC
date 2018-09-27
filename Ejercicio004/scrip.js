@@ -17,6 +17,6 @@ function esDate(arg){
     }else{
         alert("No es una clase date");
     }
-
+    
 }
 
