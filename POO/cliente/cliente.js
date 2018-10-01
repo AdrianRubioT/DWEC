@@ -1,6 +1,6 @@
-class cliente{
-    
-    constructor(_nombre, _direccion, _dni ,_telefono){
+class cliente {
+
+    constructor(_nombre, _direccion, _dni, _telefono) {
 
         this.nombre = _nombre;
         this.direccion = _direccion;
@@ -8,39 +8,39 @@ class cliente{
         this.telefono = _telefono;
     }
 
-    set nombre ( newNombre ) {
+    set nombre(newNombre) {
         this.nombre = newNombre;
     }
 
-    get nombre () {
+    get nombre() {
         return this.nombre;
     }
 
-    set direccion ( newdireccion ) {
+    set direccion(newdireccion) {
         this.direccion = newdireccion;
     }
 
-    get direccion () {
+    get direccion() {
         return this.direccion;
     }
 
-    set dni ( newdni ) {
+    set dni(newdni) {
         this.dni = newdni;
     }
 
-    get dni () {
+    get dni() {
         return this.dni;
     }
 
-    set telefono ( newtelefono ) {
+    set telefono(newtelefono) {
         this.telefono = newtelefono;
     }
 
-    get telefono () {
+    get telefono() {
         return this.telefono;
     }
 
-    
+
 
 
 
