@@ -1,7 +1,7 @@
-export class cliente {
+export class Cliente {
 
     constructor(_nombre, _direccion, _dni, _telefono) {
-
+        alert("hola mundo");
         this.nombre = _nombre;
         this.direccion = _direccion;
         this.dni = _dni;

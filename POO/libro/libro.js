@@ -1,4 +1,4 @@
-export class libro {
+export class Libro {
 
     constructor(_libro, _titulo, _autor, _pais, _isbn) {
 
