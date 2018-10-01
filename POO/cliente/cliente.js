@@ -1,4 +1,4 @@
-class cliente {
+export class cliente {
 
     constructor(_nombre, _direccion, _dni, _telefono) {
 
