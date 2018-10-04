@@ -1,4 +1,4 @@
-import "./cliente/cliente";
+import "./cliente/cliente.js";
 import { libro } from "./libro/libro";
 
 var cliente1 = new cliente("bart", "Calle falsa 123", "12345678x", "654321987");
