@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,19 +10,65 @@
     <script src="scrip.js"></script>
 
 </head>
-<body>
-    
-    <form action="">
-        <label for="">Nombre: </label><input onblur="valNombre(this.value)"  type="text" name="nombre">
-        <label for="">Apellido: </label><input onblur="valApellido(this.value)" type="text" name="apellido">
-        <label for="">e-mail: </label><input onblur="valCorreo(this.value)" type="text" name="email">
-        <label for="">DNI: </label><input onblur="valDNI(this.value)"  type="text" name="dni">
-        <label for="">Password: </label> <input onblur="valPass(this)" type="text" name="password">
-        <label for="">Repetir Password: </label> <input onblur="checkPass(this)" type="text">
-        <label for="">IP Equipo: </label> <input onblur="valIP(this.value)" type="text" name="ip">
-        <input type="submit">
-    </form>
 
+<body>
+    <div class="ventana">
+        <form action="">
+            <div class="texto">
+                <label for="">Nombre: </label>
+            </div>
+            <div class="input">
+                <input onblur="valNombre(this)" type="text" name="nombre">
+            </div>
+
+            <div class="texto">
+                <label for="">Apellido: </label>
+            </div>
+            <div class="input">
+                <input onblur="valApellido(this.value)" type="text" name="apellido">
+            </div>
+
+            <div class="texto">
+                <label for="">e-mail: </label>
+            </div>
+            <div class="input">
+                <input onblur="valCorreo(this.value)" type="text" name="email">
+            </div>
+
+            <div class="texto">
+                <label for="">DNI: </label>
+            </div>
+            <div class="input">
+                <input onblur="valDNI(this.value)" type="text" name="dni">
+            </div>
+
+            <div class="texto">
+                <label for="">Password: </label>
+            </div>
+            <div class="input">
+                <input onblur="valPass(this)" type="password" name="password">
+            </div>
+
+            <div class="texto">
+                <label for="">Repetir Password: </label>
+            </div>
+            <div class="input">
+                <input onblur="checkPass(this)" type="password">
+            </div>
+
+            <div class="texto">
+                <label for="">IP Equipo: </label>
+            </div>
+            <div class="input">
+                <input onblur="valIP(this.value)" type="text" name="ip">
+            </div>
+
+            <div class="">
+                <input type="submit">
+            </div>
+        </form>
+    </div>
 
 </body>
+
 </html>

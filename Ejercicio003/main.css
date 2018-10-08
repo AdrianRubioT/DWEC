@@ -1,0 +1,34 @@
+.ventana{
+    width: 50%;
+    text-align: center;
+    margin: 25px;
+}
+
+form div{
+    margin: 5px;
+}
+
+.texto {
+    padding:10px;
+    width:calc(25% - 50px);
+    text-align:right;
+    font-weight: bold;
+    float:left;
+    
+}
+.input {
+    width:75%;
+    font-weight: bold;
+    float: right;
+
+}
+
+.input input {
+    width:100%;
+
+}
+
+input[type="sumit"]{
+    text-align: center;
+}
+

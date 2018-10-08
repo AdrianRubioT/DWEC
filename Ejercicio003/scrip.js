@@ -21,10 +21,10 @@ var password1;
 
 function valPass(pass) {
     password1 = pass.value;
-    var expresion_regular_nombre;
+    var expresion_regular_pass;
 
-    expresion_regular_nombre = /^[A-Z][a-z]/;
-    if (expresion_regular_nombre.test(pass.value) == true) {
+    expresion_regular_pass = /^[A-Z][a-z]/;
+    if (expresion_regular_pass.test(pass.value) == true) {
         alert("coorecto");
     }else{
         alert("El password no es correcto");
@@ -33,12 +33,20 @@ function valPass(pass) {
 }
 
 function checkPass(elemento) {
-    alert(password1);
+    var pass = elemento.value;
+    
+    if (pass == password1) {
+        alert("Correcto");
+    }else{
+        alert("Los password no coinciden");
+    }
+
+
 }
 
 
-function valNombre(nombre) {
-    
+function valNombre(elemento) {
+    var nombre = elemento.value;
     var expresion_regular_nombre;
 
     expresion_regular_nombre = /^[A-Z][a-z]*/;
