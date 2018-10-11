@@ -1,0 +1,21 @@
+
+body div{
+    width: 50%;
+    height: 50%;
+}
+
+._1{
+    rotate: 0deg;
+}
+
+._2{
+    rotate: 90deg;
+}
+
+._3{
+    rotate: 180deg;
+}
+
+._4{
+    rotate: 270deg;
+}
