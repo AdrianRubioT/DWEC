@@ -1,21 +1,58 @@
-
-body div{
-    width: 50%;
-    height: 50%;
+body {
+    width:100%;
+    height:100%;
 }
+/* 
 
-._1{
-    rotate: 0deg;
+
+.primero{
+    transform: rotate(0deg);
+    
 }
 
 ._2{
-    rotate: 90deg;
+    transform: rotate(90deg);
+    
 }
 
 ._3{
-    rotate: 180deg;
+    transform: rotate(180deg);
 }
 
 ._4{
-    rotate: 270deg;
+    transform: rotate(270deg);
+}
+ */
+.caja {
+    float:left;
+    width:50%;
+    height:50%;
+}
+.SI{
+    background-color: yellow;
+    border:1px solid black;
+}
+.SD{
+    background-color: red;
+}
+.II{
+    background-color: blue;
+}
+.ID{
+    background-color: green;
+}
+
+.imagen {
+    width:100px;
+    height:100px;
+    background-color:blue;
+    /* background-image: src("Captura de pantalla de 2018-10-11 20-35-22.png"); */
+}
+.imagen > img {
+    width:100%;
+    height:100%;
+}
+.boton {
+    background-color:blue;
+    box-shadow:1x 1px 5px blue;
 }
