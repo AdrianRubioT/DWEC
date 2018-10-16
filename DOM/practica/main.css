@@ -1,0 +1,96 @@
+
+.caja {
+    position:absolute;
+    left:0;
+    top:0;
+    height:50%;
+    width:50%;
+    background-color:yellow;
+}
+.caja2 {
+    position:absolute;
+    left:50%;
+    top:0;
+    height:50%;
+    width:50%;
+    background-color:red;
+}
+.caja div div {
+    float:left;
+    
+}
+.caja3 {
+    position:absolute;
+    left:0;
+    top:50%;
+    height:50%;
+    width:50%;
+    background-color:blue;
+}
+.caja4 {
+    position:absolute;
+    left:50%;
+    top:50%;
+    height:50%;
+    width:50%;
+    background-color:green;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.imagen1{
+    position: absolute;
+    left: 95%;
+    top: 50%;
+    z-index: 1;
+
+    height: 10%;
+    width: 10%;
+    /* transform: rotate(0deg); */
+}
+
+.imagen2{
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    z-index: 1;
+
+    height: 10%;
+    width: 10%;
+    transform: rotate(90deg);
+}
+
+.imagen3{
+    position: absolute;
+    left: 45%;
+    top: -5%;
+    z-index: 1;
+
+    height: 10%;
+    width: 10%;
+    transform: rotate(270deg);
+}
+
+.imagen4{
+    position: absolute;
+    left: -5%;
+    top: 50%;
+    z-index: 1;
+
+    height: 10%;
+    width: 10%;
+    transform: rotate(180deg);
+}
+
+.centrar{
+    width: 75%;
+    height: 75%;
+
+    margin: 6% auto;
+    
+    text-overflow: ellipsis;
+    background-color: purple;
+}
