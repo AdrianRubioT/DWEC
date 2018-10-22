@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,43 +9,49 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 </head>
+
 <body>
-    
-    <div class="rojo">
-        <div class="lienzo">
 
-        </div>
-        <div class="boton">
-            <button>Eliminar</button>
-        </div>
-    </div>
+    <div class="mayor">
 
-    <div class="azul">
-        <div class="lienzo">
+        <div class="contenido">
+            <div class="rojo lienzo" onmouseover="redondear(this)">
 
+            </div>
+            <div class="boton" onclick="eliminar(this)">
+                <button>Eliminar</button>
+            </div>
         </div>
-        <div class="boton">
-            <button>Eliminar</button>
-        </div>
-    </div>
 
-    <div class="amarillo">
-        <div class="lienzo">
+        <div class=" contenido">
+            <div class="azul lienzo">
 
+            </div>
+            <div class="boton" onclick="eliminar(this)">
+                <button>Eliminar</button>
+            </div>
         </div>
-        <div class="boton">
-            <button>Eliminar</button>
-        </div>
-    </div>
 
-    <div class="negro">
-        <div class="lienzo">
+        <div class=" contenido">
+            <div class="amarillo lienzo">
 
+            </div>
+            <div class="boton" onclick="eliminar(this)">
+                <button>Eliminar</button>
+            </div>
         </div>
-        <div class="boton">
-            <button>Eliminar</button>
+
+        <div class=" contenido">
+            <div class="negro lienzo">
+
+            </div>
+            <div class="boton" onclick="eliminar(this)">
+                <button>Eliminar</button>
+            </div>
         </div>
+
     </div>
 
 </body>
+
 </html>

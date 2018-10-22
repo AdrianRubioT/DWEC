@@ -10,3 +10,67 @@
 .negro{
     background-color: black;
 }
+
+.mayor{
+
+    position:absolute;
+    left:0;
+    top:0;
+
+    background-color: rgb(214, 214, 214);
+    border: solid 1px;
+    height: 500px;
+    width: 100%;
+}
+
+.contenido{
+
+    margin: 3%;
+    float: left;
+}
+
+.lienzo{
+    height: 300px;
+    width: 300px;
+
+    
+}
+
+.cuadrado{
+    transition: ease-in-out;
+    transition-duration: 3s;
+    transition-property: border-radius;
+    border-radius: 0%;
+    
+}
+
+.sombra{
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.644);
+}
+
+.undido{
+    box-shadow: inset 10px 0px 5px 5px rgba(0,0,0,0.46);
+}
+
+.redondo{
+    transition: ease-in-out;
+    transition-duration: 3s;
+    transition-property: border-radius;
+
+    border-radius: 50%;
+}
+
+
+.boton{
+    margin: 1em;
+    text-align: center;
+}
+
+.transicion{
+    
+    transition-duration: 3s;
+    transition: ease-in-out;
+
+    border-radius: 50%;
+
+}
