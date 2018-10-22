@@ -1,6 +1,9 @@
 function redondear(elemento) {
     
-    alert("hola");
+    /* alert("hola"); */
+   /* elemento.clasList.add('redondo'); */
+   elemento.className += " redondo";
+
 
 }
 
