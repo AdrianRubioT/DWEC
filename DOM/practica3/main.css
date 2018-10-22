@@ -1,0 +1,17 @@
+#contenedor{
+    position:absolute;
+    left:0;
+    top:0;
+    height:50%;
+    width:50%;
+    background-color:yellow;
+}
+
+#contenido{
+    position:absolute;
+    left:0;
+    top:0;
+    height:50%;
+    width:50%;
+    background-color:red;
+}
