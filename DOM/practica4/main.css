@@ -1,0 +1,32 @@
+.btnAniadir{
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: grey;
+    border: 1px;
+    border-color: black;
+    
+    position: absolute;
+    top: calc(95% - 50px);
+    left: calc(95% - 50px);
+    z-index: 1;
+}
+
+
+
+.campo{
+    float: left;
+
+}
+
+.campo div{
+    float: left;
+    margin: 5px;
+}
+
+.eliminar, .editar{
+    float: left;
+    height: 25px;
+    width: 25px;
+}
