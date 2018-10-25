@@ -11,6 +11,7 @@
     top: calc(95% - 50px);
     left: calc(95% - 50px);
     z-index: 1;
+    
 }
 
 
@@ -27,6 +28,32 @@
 
 .eliminar, .editar{
     float: left;
-    height: 25px;
-    width: 25px;
+    text-align: center;
+}
+
+.eliminar button, .editar button{
+    height: 45px;
+    width: 45px;
+}
+
+.eliminar button {
+    background-image: url('mg/x.jpg');
+    background-repeat: no-repeat;
+    background-position-x: calc(50% - 25px);
+    background-position-y: calc(50% - 25px);
+    border-radius: 15px;
+}
+
+.editar button {
+    background-image: url('img/lapiz.jpg');
+    background-repeat: no-repeat;
+    background-position-x: calc(50% - 25px);
+    background-position-y: calc(50% - 25px);
+    border-radius: 15px;
+}
+
+
+
+.eliminar button img, .editar button img{
+    
 }
