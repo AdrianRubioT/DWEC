@@ -12,9 +12,8 @@
     left: calc(95% - 50px);
     z-index: 1;
     
+    position: fixed;
 }
-
-
 
 .campo{
     float: left;
@@ -52,8 +51,16 @@
     border-radius: 15px;
 }
 
+body{
+    background-color: tomato;
+}
 
 
-.eliminar button img, .editar button img{
-    
+
+.campo:nth-child(odd){
+    background-color: aqua;
+}
+
+.campo:nth-child(even){
+    background-color: violet;
 }
