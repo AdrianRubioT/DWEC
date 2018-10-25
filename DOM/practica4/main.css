@@ -36,7 +36,7 @@
 }
 
 .eliminar button {
-    background-image: url('mg/x.jpg');
+    background-image: url('img/x.jpg');
     background-repeat: no-repeat;
     background-position-x: calc(50% - 25px);
     background-position-y: calc(50% - 25px);
