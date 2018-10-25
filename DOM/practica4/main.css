@@ -1,4 +1,4 @@
-.btnAniadir{
+#btnAniadir{
 
     height: 50px;
     width: 50px;
@@ -33,29 +33,17 @@
 .eliminar button, .editar button{
     height: 45px;
     width: 45px;
-}
-
-.eliminar button {
-    background-image: url('img/x.jpg');
     background-repeat: no-repeat;
     background-position-x: calc(50% - 25px);
     background-position-y: calc(50% - 25px);
     border-radius: 15px;
 }
 
-.editar button {
-    background-image: url('img/lapiz.jpg');
-    background-repeat: no-repeat;
-    background-position-x: calc(50% - 25px);
-    background-position-y: calc(50% - 25px);
-    border-radius: 15px;
-}
+
 
 body{
     background-color: tomato;
 }
-
-
 
 .campo:nth-child(odd){
     background-color: aqua;
