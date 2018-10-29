@@ -39,6 +39,9 @@
     border-radius: 15px;
 }
 
+.disabled{
+    background-color: grey;
+}
 
 
 body{

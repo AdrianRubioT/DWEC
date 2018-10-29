@@ -1,20 +1,19 @@
 
-document.addEventListener("DOMContentLoaded", cargar, false);
-
-
 function cargar() {
     document.getElementById("btnAniadir").addEventListener("click", aniadirCampo, false);
 }
 
+
+/* constantes para numerar los id y nombres de los label e input */
+var dni = 0;
+var nombre = 0;
+var apellido = 0;
+
 function aniadirCampo() {
 
-    /*     alert("hola");  */
-    /*     var nuevoElemento = document.createElement("p");
-        var texto = document.createTextNode("hola caracola");
-        nuevoElemento.appendChild(texto);
-    
-        document.getElementsBytagName("div")[0].appendChild(nuevoElemento);
-     */
+    dni++;
+    nombre++;
+    apellido++;
 
     /* <div class="campo"> */
     var div_campo = document.createElement("div");
@@ -31,19 +30,20 @@ function aniadirCampo() {
 
     /* <div class="DNI"> */
     var div_dni = document.createElement("div");
-    div_dni.className += "DNI";
+    div_dni.className += "DNI" + dni;
 
     /* <label for="dni">DNI</label> */
     var label_dni = document.createElement("label");
-    var label_dni_text = document.createTextNode("DNI");
+    var label_dni_text = document.createTextNode("DNI ");
     label_dni.appendChild(label_dni_text);
-    label_dni.setAttribute("for", "dni");
+    label_dni.setAttribute("for", "dni" + dni);
 
     /* <input type="text" name="dni" id="dni"> */
     var input_dni = document.createElement("input");
     input_dni.setAttribute("type", "text");
-    input_dni.setAttribute("name", "dni");
-    input_dni.id = "dni";
+    input_dni.setAttribute("name", "dni" + dni);
+    input_dni.id = "dni" + dni;
+    input_dni.disabled = true;
 
     /* <div class="DNI">...</div> */
     div_dni.appendChild(label_dni);
@@ -58,19 +58,20 @@ function aniadirCampo() {
 
     /* <div class="nombre"> */
     var div_nombre = document.createElement("div");
-    div_nombre.className += "nombre";
+    div_nombre.className += "nombre" + nombre;
 
     /* <label for="nombre">Nombre</label> */
     var label_nombre = document.createElement("label");
-    var label_nombre_text = document.createTextNode("Nombre");
+    var label_nombre_text = document.createTextNode("Nombre ");
     label_nombre.appendChild(label_nombre_text);
-    label_nombre.setAttribute("for", "nombre");
+    label_nombre.setAttribute("for", "nombre" + nombre);
 
     /* <input type="text" name="nombre" id="nombre"> */
     var input_nombre = document.createElement("input");
     input_nombre.setAttribute("type", "text");
-    input_nombre.setAttribute("name", "nombre");
-    input_nombre.id = "nombre";
+    input_nombre.setAttribute("name", "nombre" + nombre);
+    input_nombre.id = "nombre" + nombre;
+    input_nombre.disabled = true;
 
     /* <div class="nombre">...</div> */
     div_nombre.appendChild(label_nombre);
@@ -86,19 +87,20 @@ function aniadirCampo() {
 
     /* <div class="apellido"> */
     var div_apellido = document.createElement("div");
-    div_apellido.className += "apellido";
+    div_apellido.className += "apellido" + apellido;
 
     /* <label for="apellido">Apellido</label> */
     var label_apellido = document.createElement("label");
-    var label_apellido_text = document.createTextNode("Apellido");
+    var label_apellido_text = document.createTextNode("Apellido ");
     label_apellido.appendChild(label_apellido_text);
-    label_apellido.setAttribute("for", "apellido");
+    label_apellido.setAttribute("for", "apellido" + apellido);
 
     /* <input type="text" name="apellido" id="apellido"> */
     var input_apellido = document.createElement("input");
     input_apellido.setAttribute("type", "text");
-    input_apellido.setAttribute("name", "apellido");
-    input_apellido.id = "apellido";
+    input_apellido.setAttribute("name", "apellido" + apellido);
+    input_apellido.id = "apellido" + apellido;
+    input_apellido.disabled = true;
 
     /* <div class="apellido">...</div> */
     div_apellido.appendChild(label_apellido);
@@ -116,6 +118,7 @@ function aniadirCampo() {
 
     /* <button> */
     var button_editar = document.createElement("button");
+    button_editar.addEventListener("click", editar, false);
 
     /* <img src="img/lapiz.jpg" alt="!"> */
     var img_editar = document.createElement("img");
@@ -137,6 +140,7 @@ function aniadirCampo() {
 
     /* <button> */
     var button_eliminar = document.createElement("button");
+    button_eliminar.addEventListener("click", eliminar, false);
 
     /* <img src="img/x.jpg" alt="!"> */
     var img_eliminar = document.createElement("img");
@@ -155,29 +159,35 @@ function aniadirCampo() {
     div_campo.appendChild(div_eliminar);
     document.getElementById("lista").appendChild(div_campo);
 
-
-    /* div_campo.appendChild(label_dni); */
-
-    /* document.getElementById("lista").appendChild(div_campo); */
 }
 
-/* 
-<div class="campo">
+function eliminar() {
+    
 
+    var padre = this.parentNode;
+    var abuelo = padre.parentNode;
+    var tatarabuelo = abuelo.parentNode;
 
+    tatarabuelo.removeChild(abuelo);
 
-    <div class="apellido">
-        <label for="apellido">Apellido</label>
-        <input type="text" name="apellido" id="apellido">
-    </div>
+    /* var array = abuelo.getElementsByTagName("div"); */
+    
 
-    <div class="editar">
-        <button><img src="img/lapiz.jpg" alt="!"></button>
-    </div>
+    
+}
 
-    <div class="editar">
-        <button><img src="img/x.jpg" alt="X"></button>
-    </div>
+function editar() {
 
-</div>
- */
+    var padre = this.parentNode;
+    var abuelo = padre.parentNode;
+
+    var array = abuelo.getElementsByTagName("input");
+    for(let i = 0; i < array.length; i++) {
+        array[i].disabled = false;
+    }
+
+    this.className += "disabled";
+    this.disabled = true;
+}
+
+document.addEventListener("DOMContentLoaded", cargar, false);
