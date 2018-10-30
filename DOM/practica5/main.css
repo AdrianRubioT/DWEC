@@ -1,0 +1,57 @@
+#btnAniadir{
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: grey;
+    border: 1px;
+    border-color: black;
+    
+    position: absolute;
+    top: calc(95% - 50px);
+    left: calc(95% - 50px);
+    z-index: 1;
+    
+    position: fixed;
+}
+
+.campo{
+    float: left;
+
+}
+
+.campo div{
+    float: left;
+    margin: 5px;
+}
+
+.eliminar, .editar{
+    float: left;
+    text-align: center;
+}
+
+.eliminar button, .editar button{
+    height: 45px;
+    width: 45px;
+    background-repeat: no-repeat;
+    background-position-x: calc(50% - 25px);
+    background-position-y: calc(50% - 25px);
+    border-radius: 15px;
+}
+
+.disabled{
+    background-color: grey;
+}
+
+
+body{
+    background-color: slategrey;
+}
+
+.campo:nth-child(odd){
+    background-color: orange;
+}
+
+.campo:nth-child(even){
+    background-color: violet;
+}
