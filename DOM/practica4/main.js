@@ -162,19 +162,27 @@ function aniadirCampo() {
 }
 
 function eliminar() {
-    
+
+    var borrar = true;
 
     var padre = this.parentNode;
     var abuelo = padre.parentNode;
     var tatarabuelo = abuelo.parentNode;
 
-    tatarabuelo.removeChild(abuelo);
+    for (let i = 0; i < abuelo.getElementsByTagName("input").length; i++) {
 
-    /* var array = abuelo.getElementsByTagName("div"); */
-    
+        if (abuelo.getElementsByTagName("input")[i].value == "") {
+            borrar = false;
+        }
 
-    
+    }
+
+    if (borrar && confirm("Seguro que quiere eliminar este contenido")) {
+        tatarabuelo.removeChild(abuelo);
+    }
+
 }
+
 
 function editar() {
 
@@ -182,7 +190,7 @@ function editar() {
     var abuelo = padre.parentNode;
 
     var array = abuelo.getElementsByTagName("input");
-    for(let i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         array[i].disabled = false;
     }
 

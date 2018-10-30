@@ -45,11 +45,11 @@
 
 
 body{
-    background-color: tomato;
+    background-color: slategrey;
 }
 
 .campo:nth-child(odd){
-    background-color: aqua;
+    background-color: orange;
 }
 
 .campo:nth-child(even){
