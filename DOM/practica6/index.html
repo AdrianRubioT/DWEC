@@ -7,58 +7,40 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <!-- <script src="main.js"></script> -->
+    <script src="main.js"></script>
 </head>
 
 <body>
-    <!-- 
-<video src="/home/daw/Descargas/videoplayback"></video> -->
 
-    <section>
 
-        <video src="/home/daw/Descargas/videoplayback.mp4" type="video/mp4" controls>
-            Your browser does not support HTML5 video.
-        </video>
+    <section class="reproductor">
 
-        <div>
-            <img src="img/pausa.png" alt="">
-        </div>
+            <video src="/home/daw/Descargas/videoplayback.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
 
-        <div>
-            <img src="img/play.png" alt="">
-        </div>
+            <div>
+                <progress value="70" max="100"></progress>
+            </div>
 
-        <div>
-            <img src="img/rapido.png" alt="">
-        </div>
+            
 
-        <div>
-            <img src="img/rapido.png" alt="">
-        </div>
+            <div id="botonera">
+                <button><img src="img/play.png" alt=""></button>
+                <button><img class="avanceRapido" src="img/rapido.png" alt=""></button>
+                <button><img src="img/rapido.png" alt=""></button>
+                <button><img src="img/reiniciar.png" alt=""></button>
+                <button><img src="img/silencio.png" alt=""></button>
+                <button><img src="img/volMas.png" alt=""></button>
+                <button><img src="img/volMenos.png" alt=""></button>
+                <div style="clear:both"></div>
+            </div>
 
-        <div>
-            <img src="img/pausa.png" alt="">
-        </div>
+    </section>
 
-        <div>
-            <img src="img/reiniciar.png" alt="">
-        </div>
+    <section class="viedeos">
 
-        <div>
-            <img src="img/stop.png" alt="">
-        </div>
-
-        <div>
-            <img src="img/silencio.png" alt="">
-        </div>
-
-        <div>
-            <img src="img/volMas.png" alt="">
-        </div>
-
-        <div>
-            <img src="img/volMenos.png" alt="">
-        </div>
+        
 
     </section>
 
