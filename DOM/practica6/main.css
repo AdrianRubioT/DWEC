@@ -2,20 +2,19 @@ body{
     background-color: dimgray;
 }
 
-img{
+button > img{
     height: 100%;
-
     position: relative;
     left: -8px;
 }
+
 #botonera {
     background-color:green;
-    float:left;
-    
+    float: left;
+    width: inherit;
 }
 button{
-    float: left;
-    
+
     background-color:red;
     margin:10px;
     margin-top: 5px; 
@@ -45,6 +44,50 @@ progress::-webkit-progress-bar{
 
 
 .reproductor{
+    float: left;
     width: 640px;
+    position:relative;
+
 }
 
+.recomendados{
+    width: 55%;
+    float: right;
+}
+
+.recomendados video{
+    float: right;
+    width: 300px;
+    margin: 10px;
+}
+
+.oculto{
+    display: none;
+}
+
+.anuncio{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* background-color: red; */
+}
+
+.imgAnuncio{
+    height: 60%;
+    width: 60%;
+
+    /* http://ecapy.com/css-centrar-vertical-y-horizontalmente-un-elemento-sin-saber-su-tamano/index.html */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.imgAnuncio > img{
+    height: 100%;
+    width: 100%;
+}
