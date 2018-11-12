@@ -91,3 +91,30 @@ progress::-webkit-progress-bar{
     height: 100%;
     width: 100%;
 }
+
+
+.cerrarAnuncio p {
+    background-color: brown;
+    float: right;
+    font-size: 40px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.cuentaAtras{
+
+    transform: translate(0, 350%);
+
+    /* vertical-align: bottom; */
+    background-color: brown;
+    float: left;
+    
+    border-radius: 10px;
+    padding: 2px,0;
+
+}
+.cuentaAtras p{
+    width: 50%;
+    height: 100%;
+    font-size: 25px;
+}
