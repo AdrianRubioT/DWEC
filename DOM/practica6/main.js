@@ -45,11 +45,8 @@ function muteVideo() {
 
 
 function avanzarVideo() {
-
-    video.currentTime += tiempo;
-    
+    video.currentTime += tiempo;   
 }
-
 function retrocederVideo() {
     video.currentTime -= tiempo;
 }
