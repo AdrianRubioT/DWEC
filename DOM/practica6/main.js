@@ -13,11 +13,9 @@ var sonido = 0.2;
 var video;
 
 
-
-
 function cargar() {
 
-    timer = setInterval(correrTiempo, 1000);
+    ponerTiempo();
     document.getElementById("playPausa").addEventListener("click", playPauseVideo, false);
     document.getElementById("rebobinar").addEventListener("click", retrocederVideo, false);
     document.getElementById("avanzar").addEventListener("click", avanzarVideo, false);
@@ -26,6 +24,10 @@ function cargar() {
     document.getElementById("volMenos").addEventListener("click", menosVol, false);
     document.getElementById("reiniciar").addEventListener("click", reiniciarVideo, false);
 
+}
+
+function ponerTiempo() {
+    timer = setInterval(correrTiempo, 1000);
 }
 
 function reiniciarVideo() {
