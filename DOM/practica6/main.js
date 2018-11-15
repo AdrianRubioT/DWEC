@@ -26,12 +26,12 @@ function cargar() {
 
 function avanzarVideo() {
 
-    alert(video.currentTime);
+    video.currentTime += tiempo;
     
 }
 
 function retrocederVideo() {
-    
+    video.currentTime -= tiempo;
 }
 
 
