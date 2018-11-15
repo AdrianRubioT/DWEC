@@ -24,7 +24,12 @@ function cargar() {
     video = document.getElementById("video1");
     document.getElementById("volMas").addEventListener("click", masVol, false);
     document.getElementById("volMenos").addEventListener("click", menosVol, false);
+    document.getElementById("reiniciar").addEventListener("click", reiniciarVideo, false);
 
+}
+
+function reiniciarVideo() {
+    video.load();
 }
 
 function masVol() {
