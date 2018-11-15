@@ -7,7 +7,8 @@ var videoActivo = "video1";
 /* variable para avanzar o retroceder el timepo del video*/
 var tiempo = 10;
 
-
+/*var para subir o bajar el sonido*/
+var sonido = 0.2;
 
 var video;
 
@@ -21,9 +22,18 @@ function cargar() {
     document.getElementById("rebobinar").addEventListener("click", retrocederVideo, false);
     document.getElementById("avanzar").addEventListener("click", avanzarVideo, false);
     video = document.getElementById("video1");
-    document.getElementById("silencio").addEventListener("click", muteVideo, false);
+    document.getElementById("volMas").addEventListener("click", masVol, false);
+    document.getElementById("volMenos").addEventListener("click", menosVol, false);
 
 }
+
+function masVol() {
+    video.volume += sonido;
+}
+function menosVol() {
+    video.volume -= sonido;
+}
+
 
 function muteVideo() {
     if(video.muted == false){
