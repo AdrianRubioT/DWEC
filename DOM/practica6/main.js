@@ -8,6 +8,7 @@ var videoActivo = "video1";
 var tiempo = 10;
 
 
+
 var video;
 
 
@@ -20,7 +21,16 @@ function cargar() {
     document.getElementById("rebobinar").addEventListener("click", retrocederVideo, false);
     document.getElementById("avanzar").addEventListener("click", avanzarVideo, false);
     video = document.getElementById("video1");
+    document.getElementById("silencio").addEventListener("click", muteVideo, false);
 
+}
+
+function muteVideo() {
+    if(video.muted == false){
+        video.muted = true;
+    }else{
+        video.muted = false;
+    }
 }
 
 
