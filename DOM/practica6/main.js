@@ -3,7 +3,7 @@ var segundos = 1;
 var timer;
 var videoActivo = "video1";
 
-/* variable para avanzar o retroceder el timepo del */
+/* variable para avanzar o retroceder el timepo del video*/
 var tiempo = 10;
 
 var video = document.getElementsByClassName("reproductor")[0].children;
