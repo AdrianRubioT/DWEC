@@ -62,12 +62,12 @@ function playPauseVideo() {
     var boton = document.getElementById("playPausa");
 
 
-    if (boton.className != "play"){
-        boton.className = "play";
+    if (boton.className == "play"){
+        boton.className = "pause";
         video.play();
 
     }else{
-        boton.className = "pause";
+        boton.className = "play";
         video.pause();
     }
 }
