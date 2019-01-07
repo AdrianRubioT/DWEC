@@ -14,7 +14,7 @@ var video;
 
 
 function cargar() {
-
+    
     ponerTiempo();
     document.getElementById("playPausa").addEventListener("click", playPauseVideo, false);
     document.getElementById("rebobinar").addEventListener("click", retrocederVideo, false);
