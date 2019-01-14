@@ -9,8 +9,28 @@
 .caja2{
     border:1px solid black;
     width:300px;
-    float:right;
-    height:500px;
+
+    height:250px;
+}
+
+
+.caja3{
+    border:1px solid black;
+    width:300px;
+    height:250px;    
+}
+
+
+
+.container{
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    margin-top: 0;
+    border:1px solid black;
 }
 
 .dragElement{

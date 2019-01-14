@@ -1,7 +1,13 @@
 function cargar() {
     document.getElementById("div1").addEventListener("dragover", allowDrop);
     document.getElementById("div2").addEventListener("dragover", allowDrop);
+
     document.getElementById("drag1").addEventListener("dragstart", drag);
+    document.getElementById("drag2").addEventListener("dragstart", drag);
+    document.getElementById("drag3").addEventListener("dragstart", drag);
+    document.getElementById("drag4").addEventListener("dragstart", drag);
+    document.getElementById("drag5").addEventListener("dragstart", drag);
+
     document.getElementById("div2").addEventListener("drop", drop);
     document.getElementById("div1").addEventListener("drop", drop);
 }
@@ -10,6 +16,10 @@ function allowDrop(ev) {
 
     //Permitir que reciba algún elemento
     ev.preventDefault();
+    if (ev.target.getAttribute("draggable") == "true")
+        ev.dataTransfer.dropEffect = "none"; // dropping is not allowed
+    else
+        ev.dataTransfer.dropEffect = "all"; // drop it like it's hot
 
 }
 
@@ -30,6 +40,8 @@ function drop(ev) {
 
     //Colgamos el elemeto arrastrado y soltado en el nuevo destino.
     ev.target.appendChild(document.getElementById(data));
+
+
 
 }
 window.addEventListener("load", cargar);
