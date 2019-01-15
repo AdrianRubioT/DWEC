@@ -1,6 +1,7 @@
 function cargar() {
     document.getElementById("div1").addEventListener("dragover", allowDrop);
     document.getElementById("div2").addEventListener("dragover", allowDrop);
+    document.getElementById("div3").addEventListener("dragover", allowDrop);
 
     document.getElementById("drag1").addEventListener("dragstart", drag);
     document.getElementById("drag2").addEventListener("dragstart", drag);
